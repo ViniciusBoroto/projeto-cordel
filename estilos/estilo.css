@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte3);  
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+/* --HEADER-- */
+
+header {
+    background-color: black;
+    color: white;
+    padding: 46px;
+}
+
+header h1 {
+    font-variant: small-caps;
+    font-size: 10vw;
+    text-align: center;
+    font-family: var(--fonte2);
+    padding: 0;
+}
+
+header h1 strong {
+    font-size: 1.5em;
+}
+
+header p, header p > * {
+    text-align: center;
+    font-size: 16px;
+    font-family: var(--fonte1);
+    font-weight: lighter;
+    padding-bottom: 8px;
+}
+header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 16px;
+    font-family: var(--fonte1);
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+/* --MAIN-- */
+
+main > section > * {
+    font-size: 3.5vw;
+    line-height: 2em;
+}
+
+main pre {
+    white-space: pre-line;
+}
+/* White section */
+
+.whiteBackground {
+    margin: 10vh 5vw 10vh 5vw;
+}
+
+.whiteBackground > p {
+    padding: 0px 0px 5vh 0px;
+}
+
+/* Image background section */
+
+.black-frame {
+    background-color: rgba(0, 0, 0, 0.548);
+    width: fit-content;
+    padding: 5px;
+}
+
+.black-frame > * {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.bg-pic {
+    padding: 10vh 0px 10vh 4vw;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#bg-joaninha {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+#bg-papel {
+    background-image: url(../imagens/background002.jpg);
+}
+
+/* --FOOTER-- */
+
+footer {
+    font-family: var(--fonte1);
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 18vh;
+}
+footer a {
+    font-family: var(--fonte1);
+    color: white;
+    text-decoration: none;
+    font-weight: 1000;
+}
